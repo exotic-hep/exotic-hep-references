@@ -18,6 +18,20 @@ You can then just use and modify the bibliography as usual:
     pdflatex example.tex
     bibtex example
     pdflatex example.tex
+    
+If you want to share the changes in the bibtex files with your colleagues, type
+
+    git commit -m "Adding new references..." exotic-hep-references.bib
+    git pull --no-edit && git push
+
+In case you already use git to manage your paper, you are encouraged to softlink the bibliography
+from another directory:
+
+    git clone git@github.com:exotic-hep/exotic-hep-references.git
+    git clone wherever/your-paper
+    cd your-paper
+    ln -s ../exotic-hep-references/exotic-hep-references.bib
+    # Proceed as usual
 
 ## Rules for modifying the bibtex file
 
