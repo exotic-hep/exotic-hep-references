@@ -10,14 +10,14 @@ work.
 
 If you don't use [git](https://git-scm.com/) otherwise, go to the directory where you write the paper, type
 
-  git clone https://github.com/exotic-hep/exotic-hep-references.git .
+    git clone https://github.com/exotic-hep/exotic-hep-references.git .
 
 You can then just use and modify the bibliography as usual:
 
-  pdflatex example.tex
-  pdflatex example.tex
-  bibtex example
-  pdflatex example.tex
+    pdflatex example.tex
+    pdflatex example.tex
+    bibtex example
+    pdflatex example.tex
 
 ## Rules for modifying the bibtex file
 
